@@ -304,9 +304,6 @@ body {
   .title {
     font-size: 1.125rem
   }
-  .title {
-    line-height: 1.4375rem
-  }
   .title--result {
     font-size: 2rem
   }
@@ -380,9 +377,6 @@ body {
   .title {
     font-size: 1.5rem
   }
-  .title {
-    line-height: 1.9375rem
-  }
   .title--result {
     font-size: 1.5rem
   }
@@ -444,9 +438,6 @@ body {
 @media (min-width:23.4375em)and (max-width:46em) {
   .title {
     font-size: clamp(1.125rem ,1.8895429363rem + -1.6620498615vw ,1.5rem)
-  }
-  .title {
-    line-height: clamp(1.4375rem ,2.4568905817rem + -2.216066482vw ,1.9375rem)
   }
   .title--result {
     font-size: clamp(1.5rem ,.9806094183rem + 2.216066482vw ,2rem)
