@@ -1741,7 +1741,6 @@
                 const category = document.querySelectorAll(".component__summary-text")[index];
                 const score = document.querySelectorAll(".component__summary-score span")[index];
                 const icon = document.querySelectorAll(".component__summary-icon")[index];
-                console.log(icon);
                 category.textContent = item.category;
                 score.textContent = item.score;
                 icon.src = item.icon;
