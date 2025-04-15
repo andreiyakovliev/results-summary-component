@@ -5,7 +5,7 @@
    font-family: $fontFamily;
    font-weight: 700;
    @include adaptiveValue("font-size", 18, 24);
-   @include adaptiveValue("line-height", 23, 31);
+   // @include adaptiveValue("line-height", 23, 31);
 
    &--info {
       color: $light-blue;
