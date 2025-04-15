@@ -1739,9 +1739,7 @@
         fetch("./data/data.json").then((response => response.json())).then((data => {
             data.forEach(((item, index) => {
                 const category = document.querySelectorAll(".component__summary-text")[index];
-                console.log(category);
                 const score = document.querySelectorAll(".component__summary-score span")[index];
-                console.log(score);
                 const icon = document.querySelectorAll(".component__summary-icon")[index];
                 console.log(icon);
                 category.textContent = item.category;
