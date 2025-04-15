@@ -1,0 +1,101 @@
+// Заголовки, загальні БЕМ блоки та інше...
+
+.title {
+   color: $mainColor;
+   font-family: $fontFamily;
+   font-weight: 700;
+   @include adaptiveValue("font-size", 18, 24);
+   @include adaptiveValue("line-height", 23, 31);
+
+   &--info {
+      color: $light-blue;
+   }
+
+   &--result {
+      color: $light-blue;
+      @include adaptiveValue("font-size", 32, 24);
+      @include adaptiveValue("line-height", 31, 42);
+
+      /* Heading XL */
+
+   }
+
+   &--num {
+      color: $light-blue;
+      font-weight: 800;
+      line-height: 72px;
+      @include adaptiveValue("font-size", 72, 56);
+   }
+}
+
+.text {
+   font-family: $fontFamily;
+   font-weight: 500;
+
+   @include adaptiveValue("font-size", 16, 18);
+   @include adaptiveValue("line-height", 21, 23);
+
+
+   &--red {
+      color: $red-color;
+   }
+
+   &--yellow {
+      color: $yellow-color;
+   }
+
+   &--green {
+      color: $green-color;
+   }
+
+   &--blue {
+      color: $blue-color;
+   }
+
+   &--info {
+      color: $light-blue;
+   }
+
+   &--numbers {
+      font-weight: 700;
+
+      &-opacity {
+         opacity: 0.5;
+      }
+
+      &-light {
+         color: $light-blue;
+         opacity: 0.5;
+      }
+   }
+
+   &--button {
+      color: $button-color;
+      font-size: $fontSize;
+      font-weight: 700;
+      line-height: math.div(23, 18);
+   }
+}
+
+.button {
+   width: 100%;
+   background: $mainColor;
+   border-radius: 128px;
+   display: inline-block;
+   padding: 17px 0px;
+   position: relative;
+   cursor: pointer;
+   flex-shrink: 0;
+   z-index: 2;
+
+   span {
+      z-index: 3;
+      position: relative;
+   }
+
+   @media (any-hover: hover) {
+      &:hover {
+         background: $bg-gradient;
+      }
+   }
+}
