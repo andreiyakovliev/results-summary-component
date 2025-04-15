@@ -11,9 +11,9 @@ fetch('./data/data.json')
    .then(data => {
       data.forEach((item, index) => {
          const category = document.querySelectorAll('.component__summary-text')[index];
-         console.log(category);
+         // console.log(category);
          const score = document.querySelectorAll('.component__summary-score span')[index];
-         console.log(score);
+         // console.log(score);
          const icon = document.querySelectorAll('.component__summary-icon')[index];
          console.log(icon);
 
@@ -49,4 +49,3 @@ fetch('./data/data.json')
 
 const button = document.querySelector('.button');
 console.log(button);
-
